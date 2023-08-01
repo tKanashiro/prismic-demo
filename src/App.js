@@ -1,8 +1,10 @@
+import { PrismicRichText, useFirstPrismicDocument } from "@prismicio/react";
+
 function App() {
+    const [document] = useFirstPrismicDocument();
+
     return (
-        <div>
-            <h1>Title</h1>
-        </div>
+        <div>{document && <PrismicRichText field={document.data.title} />}</div>
     );
 }
 
