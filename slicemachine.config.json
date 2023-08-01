@@ -1,0 +1,5 @@
+{
+    "repositoryName": "demo-fe-guild",
+    "adapter": "@slicemachine/adapter-next",
+    "libraries": ["./slices"]
+}
