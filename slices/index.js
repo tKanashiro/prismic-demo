@@ -3,5 +3,6 @@
 import dynamic from "next/dynamic";
 
 export const components = {
+  slice_test: dynamic(() => import("./SliceTest")),
   test: dynamic(() => import("./Test")),
 };
