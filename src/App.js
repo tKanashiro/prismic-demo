@@ -9,11 +9,14 @@ import {
 
 function App() {
     // const [document] = useFirstPrismicDocument();
-    const [document] = useAllPrismicDocumentsByType("home");
+    const [document] = useAllPrismicDocumentsByType("about");
     console.log("document", document);
     return (
         <div>
-            {document && <PrismicRichText field={document[0].data.title} />}
+            <h1>Test</h1>
+            {document && (
+                <PrismicRichText field={document[0].data.description} />
+            )}
         </div>
     );
 }
