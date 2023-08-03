@@ -3,7 +3,7 @@ import {
     SliceZone,
     useAllPrismicDocumentsByType,
 } from "@prismicio/react";
-// import { components } from "../../slices";
+import { components } from "../slices";
 
 const About = () => {
     const [documents] = useAllPrismicDocumentsByType("about");
@@ -15,10 +15,10 @@ const About = () => {
             {documents && (
                 <div>
                     <PrismicRichText field={documents[0].data.description} />
-                    {/* <SliceZone
-                        slices={documents[0].slices}
+                    <SliceZone
+                        slices={documents[0].data.slices}
                         components={components}
-                    /> */}
+                    />
                 </div>
             )}
         </>

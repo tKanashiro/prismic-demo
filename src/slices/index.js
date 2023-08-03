@@ -3,5 +3,6 @@
 import dynamic from "next/dynamic";
 
 export const components = {
-  block1: dynamic(() => import("./Block1")),
+    app: dynamic(() => import("./App")),
+    block1: dynamic(() => import("./Block1")),
 };

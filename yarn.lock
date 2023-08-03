@@ -1737,6 +1737,13 @@
     tslib "^2.3.1"
     uuid "^8.3.2"
 
+"@prismicio/next@^1.3.3":
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/@prismicio/next/-/next-1.3.3.tgz#02f4c80a6e023aca8fbf915df62df46975824752"
+  integrity sha512-c48KD0mfoftaapN9FYdvOw0BkyvWGbtj4F3KQ4UTb77FmSqjw5egE9jQMVRy4m8EmPyyjXBdJqHIRz1acYb8Ag==
+  dependencies:
+    imgix-url-builder "^0.0.4"
+
 "@prismicio/react@^2.7.1":
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/@prismicio/react/-/react-2.7.1.tgz#0e6fad55887753d5dcb0ea3e5b8a57a76cee9a4c"
@@ -5953,6 +5960,11 @@ imgix-url-builder@^0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/imgix-url-builder/-/imgix-url-builder-0.0.3.tgz#9f386de64cdd1363d352a7f6313fd7dacd8fb282"
   integrity sha512-8Oc2Cn4+jF06sEfJcVPlWYfD2F6RjrwIMbk1xEzux8unoB5LsvFc/GL1BQ47HPaeE12ReX2nMUcjUslGYWLxHA==
+
+imgix-url-builder@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/imgix-url-builder/-/imgix-url-builder-0.0.4.tgz#c0e9569eb069178b1462d6ce0b8d0943cb334a1c"
+  integrity sha512-JRLydfxGTTbSSOG82ewuCgnmw/CzIPzoDqpP3UYD7RE+QWS8ZZbpF87ZuRqtcbEKdxahRsExinuKRxPZVvukWA==
 
 immer@^9.0.7:
   version "9.0.21"

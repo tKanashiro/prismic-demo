@@ -112,6 +112,33 @@ export type PolicyDocument<Lang extends string = string> =
 export type AllDocumentTypes = AboutDocument | PolicyDocument;
 
 /**
+ * Default variation for App Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type AppSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Record<string, never>,
+  never
+>;
+
+/**
+ * Slice variation for *App*
+ */
+type AppSliceVariation = AppSliceDefault;
+
+/**
+ * App Shared Slice
+ *
+ * - **API ID**: `app`
+ * - **Description**: App
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type AppSlice = prismic.SharedSlice<"app", AppSliceVariation>;
+
+/**
  * Primary content in *Block1 → Primary*
  */
 export interface Block1SliceDefaultPrimary {
@@ -194,6 +221,9 @@ declare module "@prismicio/client" {
       PolicyDocument,
       PolicyDocumentData,
       AllDocumentTypes,
+      AppSlice,
+      AppSliceVariation,
+      AppSliceDefault,
       Block1Slice,
       Block1SliceVariation,
       Block1SliceDefault,
